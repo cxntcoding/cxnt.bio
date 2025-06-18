@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>cxnt.cc preorders</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #1a1a1a;
+      border-bottom: 1px solid #333;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      color: #0f9d58;
+    }
+
+    .container {
+      padding: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #333;
+      transition: 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      border-color: #0f9d58;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #0f9d58;
+    }
+
+    .card p {
+      color: #aaa;
+    }
+
+    .card:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>cxnt.cc preorder shop
+  </header>
+
+  <div class="container">
+    <div class="card" onclick="viewProduct('premium')">
+      <h2>Premium</h2>
+      <p>Access to all features, priority support, and updates.</p>
+    </div>
+
+    <!-- You can duplicate and rename this for more products -->
+    <div class="card" onclick="viewProduct('soon')">
+      <h2>Coming Soon</h2>
+      <p>Early access.</p>
+    </div>
+  </div>
+
+  <script>
+    function viewProduct(productId) {
+      if (productId === 'premium') {
+        window.location.href = "https://yourwebsite.com/premium"; // Replace with your link
+      } else {
+        alert("This product is coming soon!");
+      }
+    }
+  </script>
+</body>
+</html>
